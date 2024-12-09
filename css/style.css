@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
     font-family: "Lato";
     src: url(../fonts/Lato/Lato-Regular.ttf);
 }
+
 /* Header Start */
 body {
     font-family: "Lato", sans-serif;
@@ -17,7 +18,6 @@ body {
 
 .container {
     max-width: 980px;
-    height: 1168.28px;
     margin: 0 auto;
     padding: 0.01em 16px;
 }
@@ -35,23 +35,28 @@ header {
     z-index: 999;
 }
 
-.navigation_btn  ul li {
+.navigation_btn ul li {
     display: inline-block;
     padding: 10px 16px;
     text-transform: uppercase;
 }
+.hamburger {
+    display: none;
+}
+
 .navigation_btn ul li a {
     color: #777;
     text-decoration: none;
 }
 
-.navigation_btn ul li:hover{
+.navigation_btn ul li:hover {
     background-color: #ccc;
-    
+
 }
-.navigation_btn ul li:hover a{
+
+.navigation_btn ul li:hover a {
     color: black;
-    
+
 }
 
 .search_bar {
@@ -62,7 +67,7 @@ header {
     font-size: 15px;
 }
 
-.search_bar:hover{
+.search_bar:hover {
     background-color: #f44336;
     color: white;
 }
@@ -78,6 +83,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .bg__img {
     width: 100%;
     min-height: 400px;
@@ -88,8 +94,8 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background-attachment: fixed;
 }
+
 .main_section {
     position: relative;
     background: #000000;
@@ -99,11 +105,13 @@ main {
     opacity: .8;
     border-radius: 5px;
 }
+
 .main_section span {
     color: white;
     font-size: 35px;
     letter-spacing: 5px;
 }
+
 /* Main end */
 
 /* About start */
@@ -112,6 +120,7 @@ main {
     line-height: 1.8;
     padding: 64px 0 64px 0;
 }
+
 .about__title {
     text-align: center;
     font-size: 24px;
@@ -124,6 +133,7 @@ main {
     color: #777;
     margin-bottom: 20px;
 }
+
 .about_content-paragraph2 {
     color: #777;
     margin-bottom: 50px;
@@ -134,7 +144,7 @@ main {
 }
 
 .about__me-photo {
-   padding-left: 20px;
+    padding-left: 20px;
 }
 
 .about__me-photo p {
@@ -142,19 +152,20 @@ main {
     color: #777;
     margin: 20px 0 20px 0;
 }
+
 .about__me-photo_avatar {
     border-radius: 4px;
     opacity: 0.60;
     transition: 0.3s;
 }
 
-.about__me-photo_avatar:hover{
+.about__me-photo_avatar:hover {
     opacity: 1;
 }
 
 .about__me-txt {
     font-size: 15px;
-    padding: 12px 0  12px 50px;
+    padding: 12px 0 12px 50px;
     color: #777;
     line-height: 2.1;
 }
@@ -162,29 +173,31 @@ main {
 /* About end */
 
 /* Skills start */
-.skills_me{
+.skills_me {
     width: 100%;
+    margin-bottom: 64px;
 }
 
-.skills_me-title{
+.skills_me-title {
     text-align: center;
     padding: 30px 0 30px 0;
     font-size: 18px;
     color: #777;
 }
-.skills_techno{
+
+.skills_techno {
     letter-spacing: 10px;
     margin: 20px 0;
     color: #777;
 }
 
-.skills_status-bar{
+.skills_status-bar {
     width: 100%;
     height: 35px;
     background-color: #f1f1f1;
 }
 
-.skills__photograph  .skills_status-bar-child{
+.skills__photograph .skills_status-bar-child {
     width: 90%;
     height: 100%;
     background-color: #616161;
@@ -192,7 +205,8 @@ main {
     color: white;
     text-align: center;
 }
-.skills__web-design  .skills_status-bar-child{
+
+.skills__web-design .skills_status-bar-child {
     width: 85%;
     height: 100%;
     background-color: #616161;
@@ -200,7 +214,8 @@ main {
     color: white;
     text-align: center;
 }
-.skills__photoshop  .skills_status-bar-child{
+
+.skills__photoshop .skills_status-bar-child {
     width: 75%;
     height: 100%;
     background-color: #616161;
@@ -208,11 +223,12 @@ main {
     color: white;
     text-align: center;
 }
+
 /* Skills end */
 
 /* Customer Start */
 
-.customer_consent{
+.customer_consent {
     width: 100%;
     padding: 50px 40px;
     display: flex;
@@ -222,7 +238,7 @@ main {
     color: white;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -247,4 +263,63 @@ main {
     text-shadow: 0 0 20px white, 2px 3px 30px #98E4FF;
     background-attachment: fixed;
 }
+
 /* Portfolio End */
+
+/* My Work start */
+.my_work {
+    width: 100%;
+    padding: 64px 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.work-txt {
+    color: #777;
+}
+
+.work-txt p {
+    font-style: italic;
+    margin: 40px 0 40px 0;
+}
+
+.work-img img {
+    width: 216px;
+    height: 162.74px;
+}
+
+.work-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.work_btn {
+    margin-top: 64px;
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.parallax-img2 {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../images/parallax3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 53px;
+    letter-spacing: 5px;
+}
+
+/* My Work end */

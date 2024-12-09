@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -16,14 +17,31 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i> Portfolio</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                    <span class="hidden">
+                        <span class="hamburger-menu">
+                            <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
+                            <li><a href="#"><i class="fa-solid fa-bars"></i> Portfolio</a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                        </span>
+                    </span>
+
                 </ul>
             </nav>
         </div>
         <div class="search_bar">
             <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars UCH"></i>
+            <input type="checkbox">
+            <span class="menu">
+                <ul>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Portfolio</a></li>
+                    <li><a href="#"> Contact</a></li>    
+                    <li><a href="#"> Search</a></li>    
+                </ul>
+            </span>
         </div>
     </header>
     <!-- Header End -->
@@ -31,7 +49,7 @@
     <main>
         <div class="bg__img opacity-min"></div>
         <div class="main_section">
-            <span>My Website logo</span>
+            <span>My <span class="hidden">Website</span> logo</span>
         </div>
     </main>
     <!-- Main Section End -->
@@ -73,7 +91,8 @@
                             <i class="fa-solid fa-user"></i> My name
                         </b>
                     </p><br>
-                    <img class="about__me-photo_avatar" src="./images/avatar_hat.jpg" alt="me-photo" width="425.987" height="283.700">
+                    <img class="about__me-photo_avatar" src="./images/avatar_hat.jpg" alt="me-photo" width="425.987"
+                        height="283.700">
                 </div>
                 <div class="about__me-txt">
                     <p>
@@ -139,6 +158,34 @@
         </div>
         <div class="portfolio">
             <span>Portfolio</span>
+        </div>
+        <div class="container">
+            <div class="my_work">
+                <div class="work-txt">
+                    <h1>My Work</h1>
+                    <p>Here are some of my latest lorem work ipsum tipsum. <br>
+                        Click on the images to make them bigger
+                    </p>
+                </div>
+                <div class="work-img">
+                    <img src="./images/work1.jpg" alt="work-image">
+                    <img src="./images/work2.jpg" alt="work-image">
+                    <img src="./images/work3.jpg" alt="work-image">
+                    <img src="./images/work4.jpg" alt="work-image">
+                    <img src="./images/work55.jpg" alt="work-image">
+                    <img src="./images/work6.jpg" alt="work-image">
+                    <img src="./images/work7.jpg" alt="work-image">
+                    <img src="./images/work8.jpg" alt="work-image">
+                </div>
+                <div class="btn">
+                    <button class="work_btn">
+                        Load More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-img2">
+            <p>Contact</p>
         </div>
     </section>
     <!-- About Section End -->

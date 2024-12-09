@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1025px) {}
+
+@media only screen and (max-width: 768px) {
+    .hidden {
+        display: none;
+    }
+    .fa-magnifying-glass {
+        display: none;
+    }
+    .search_bar {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        background-color: #fff;
+    }
+
+    .menu a  {
+        color: #000;
+        text-decoration: none;
+    }
+    .menu ul li {
+        text-transform: uppercase;
+        padding: 10px 16px;
+    }
+    .menu ul li:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+    .UCH {
+        font-size: 22px;
+        position: relative;
+        left: 25px;
+    }
+    .hamburger {
+        padding: 10px 20px;
+        display: block;
+    }
+    .hamburger input{
+        width: 30px;
+        height: 20px;
+        opacity: 0;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+    .hamburger-menu {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 480px) {}
